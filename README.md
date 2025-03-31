@@ -44,6 +44,7 @@ Install project dependencies using Maven:
    Copy
    Edit
    mvn clean install
+
 This will download and install all necessary dependencies, including JavaFX.
 
 2. **Setup JavaFX with Maven:**
