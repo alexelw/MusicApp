@@ -38,17 +38,16 @@ Before running the project, make sure you have the following software installed:
    ```bash
    git clone https://github.com/yourusername/music-streaming-app.git
    cd music-streaming-app
-Install project dependencies using Maven:
+   
+2. **Install project dependencies using Maven:**
+This will download and install all necessary dependencies, including JavaFX.
 
    ```bash
    Copy
    Edit
    mvn clean install
 
-This will download and install all necessary dependencies, including JavaFX.
-
-2. **Setup JavaFX with Maven:**
-
+3. **Setup JavaFX with Maven:**
 Ensure your pom.xml file includes the necessary dependencies for JavaFX. Example:
 
    ```bash
@@ -63,8 +62,7 @@ Ensure your pom.xml file includes the necessary dependencies for JavaFX. Example
           </dependency>
       </dependencies>
 
-3. **Run the project:**
-
+4. **Run the project:**
 If using Visual Studio Code with the Java Extension Pack:
 
 Open the project folder.
@@ -75,7 +73,8 @@ Open the terminal and run the following command:
    bash
    Copy
    Edit
-   mvn javafx:run   
+   mvn javafx:run
+
 If using IntelliJ IDEA or Eclipse:
 
 Import the project as a Maven project.
