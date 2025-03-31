@@ -1,44 +1,43 @@
-# MusicApp
-Overview
-This project is a Music Streaming App Emulator built using Java, JavaFX, and Maven. The app allows users to manage songs, artists, and playlists. It features a graphical user interface (GUI) where you can add new songs, view songs by artists, add songs to playlists, and much more.
+# Music Streaming App
 
-Prerequisites
-To run this project, you need the following software installed:
+## Overview
+This project is a **Music Streaming App Emulator** built using **Java**, **JavaFX**, and **Maven**. The app allows users to manage songs, artists, and playlists. It features a graphical user interface (GUI) where you can add new songs, view songs by artists, add songs to playlists, and much more.
 
-Java (JDK 11 or higher)
+---
 
-Maven (to manage dependencies)
+## Prerequisites
 
-JavaFX SDK (to create the graphical user interface)
+Before running the project, make sure you have the following software installed:
 
-Visual Studio (or another Java IDE like IntelliJ IDEA or Eclipse)
+- **Java** (JDK 11 or higher)
+- **Maven** (to manage dependencies)
+- **JavaFX SDK** (to create the graphical user interface)
+- **Visual Studio Code** (or another Java IDE like IntelliJ IDEA or Eclipse)
 
-Installing Java and Maven
-Install Java (JDK 11 or higher):
+### Installing Java and Maven
 
-Download and install the JDK from the official Oracle website.
+1. **Install Java (JDK 11 or higher):**
+   - Download and install the JDK from the [official Oracle website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+   - After installation, ensure that the `JAVA_HOME` environment variable is set, and the `java` command is available in your terminal or command prompt.
 
-After installation, ensure that the JAVA_HOME environment variable is set, and the java command is available in your terminal or command prompt.
+2. **Install Maven:**
+   - Download and install Maven from [Maven's official website](https://maven.apache.org/download.cgi).
+   - After installation, set the `MAVEN_HOME` environment variable and ensure the `mvn` command is accessible from your terminal or command prompt.
 
-Install Maven:
+### Installing JavaFX
 
-Download and install Maven from Maven's official website.
+1. Download the **JavaFX SDK** from [OpenJFX](https://openjfx.io/).
+2. Add the JavaFX SDK to your project using Maven (as shown in the `pom.xml` file).
 
-After installation, set the MAVEN_HOME environment variable and ensure the mvn command is accessible from your terminal or command prompt.
+---
 
-Installing JavaFX
-Download the JavaFX SDK from OpenJFX.
+## Setup
 
-Add the JavaFX SDK to your project using Maven (as shown in the pom.xml file).
+1. **Clone the repository:**
 
-Setup
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/music-streaming-app.git
-cd music-streaming-app
+   ```bash
+   git clone https://github.com/yourusername/music-streaming-app.git
+   cd music-streaming-app
 Install project dependencies using Maven:
 
 bash
@@ -47,7 +46,9 @@ Edit
 mvn clean install
 This will download and install all necessary dependencies, including JavaFX.
 
-Setup JavaFX with Maven: Ensure your pom.xml file includes the necessary dependencies for JavaFX. For example:
+Setup JavaFX with Maven:
+
+Ensure your pom.xml file includes the necessary dependencies for JavaFX. Example:
 
 xml
 Copy
@@ -91,14 +92,14 @@ Add Songs to Playlists: Easily add songs to existing playlists via the GUI.
 Interactive GUI: The app has a user-friendly graphical interface built using JavaFX.
 
 File Structure
-Main.java: Entry point for the application, responsible for launching the JavaFX UI.
-
-MusicService.java: Manages the songs and playlists, allowing adding/removing songs and playlists.
-
-Song.java: Represents a song with properties like title, artist, and play count.
-
-GUI components: JavaFX components for displaying songs, artists, and playlists.
-
+bash
+Copy
+Edit
+src/
+ ├── Main.java           # Entry point for the application, responsible for launching the JavaFX UI
+ ├── MusicService.java   # Manages the songs and playlists, allowing adding/removing songs and playlists
+ ├── Song.java           # Represents a song with properties like title, artist, and play count
+ └── GUI components/     # JavaFX components for displaying songs, artists, and playlists
 Usage
 Add a New Song:
 
